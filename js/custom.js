@@ -68,25 +68,25 @@
      });
 
 
-     /* ===== Tooltip Initialization ===== */
+     /* ===== Sidebar ===== */
 
-     $(function () {
-         $('[data-toggle="tooltip"]').tooltip();
+     $('.slimscrollright').slimScroll({
+         height: '100%',
+         position: 'right',
+         size: "5px",
+         color: '#dcdcdc'
      });
-
-     /* ===== Popover Initialization ===== */
-
-     $(function () {
-         $('[data-toggle="popover"]').popover();
+     $('.slimscrollsidebar').slimScroll({
+         height: '100%',
+         position: 'right',
+         size: "6px",
+         color: 'rgba(0,0,0,0.3)'
      });
-
-     /* ===== Task Initialization ===== */
-
-     $(".list-task li label").on("click", function () {
-         $(this).toggleClass("task-done");
-     });
-     $(".settings_box a").on("click", function () {
-         $("ul.theme_color").toggleClass("theme_block");
+     $('.chat-list').slimScroll({
+         height: '100%',
+         position: 'right',
+         size: "0px",
+         color: '#dcdcdc'
      });
 
      /* ===== Collepsible Toggle ===== */
